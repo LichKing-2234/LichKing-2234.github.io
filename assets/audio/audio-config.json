@@ -1,0 +1,128 @@
+{
+  "audioGroups": [
+    {
+      "groupId": "player_sword_attack",
+      "basePath": "/assets/audio/player",
+      "fileNames": [
+        "sword_strike_01.wav",
+        "sword_strike_02.wav",
+        "sword_strike_03.wav"
+      ],
+      "category": "player",
+      "volume": 0.8,
+      "description": "玩家剑击攻击音效",
+      "defaultFile": "sword_strike_02.wav"
+    },
+    {
+      "groupId": "player_punch_attack",
+      "basePath": "/assets/audio/player",
+      "fileNames": [
+        "punch_hit_01.wav",
+        "punch_hit_02.wav",
+        "punch_hit_03.wav"
+      ],
+      "category": "player",
+      "volume": 0.7,
+      "description": "玩家拳击攻击音效",
+      "defaultFile": "punch_hit_02.wav"
+    },
+    {
+      "groupId": "skeleton_scream",
+      "basePath": "/assets/audio/enemies",
+      "fileNames": [
+        "skeleton_scream_01.wav",
+        "skeleton_scream_02.wav",
+        "skeleton_scream_03.wav"
+      ],
+      "category": "enemy",
+      "volume": 0.6,
+      "description": "骷髅尖叫音效",
+      "defaultFile": "skeleton_scream_02.wav"
+    },
+    {
+      "groupId": "skeleton_growl",
+      "basePath": "/assets/audio/enemies",
+      "fileNames": [
+        "skeleton_growl_01.wav",
+        "skeleton_growl_02.wav"
+      ],
+      "category": "enemy",
+      "volume": 0.5,
+      "description": "骷髅咆哮音效",
+      "defaultFile": "skeleton_growl_01.wav"
+    },
+    {
+      "groupId": "skeleton_death",
+      "basePath": "/assets/audio/enemies",
+      "fileNames": [
+        "skeleton_death_01.wav",
+        "skeleton_death_02.wav",
+        "skeleton_death_03.wav"
+      ],
+      "category": "enemy",
+      "volume": 0.7,
+      "description": "骷髅死亡音效",
+      "defaultFile": "skeleton_death_02.wav"
+    }
+  ],
+  "audioClips": [
+    {
+      "id": "player_attack_sword",
+      "path": "/assets/audio/player/sword_strike_02.wav",
+      "category": "player",
+      "volume": 0.8,
+      "description": "玩家剑击攻击（后备）"
+    },
+    {
+      "id": "player_attack_punch",
+      "path": "/assets/audio/player/punch_hit_02.wav",
+      "category": "player",
+      "volume": 0.7,
+      "description": "玩家拳击攻击（后备）"
+    },
+    {
+      "id": "skeleton_scream",
+      "path": "/assets/audio/enemies/skeleton_scream_02.wav",
+      "category": "enemy",
+      "volume": 0.6,
+      "description": "骷髅尖叫声（后备）"
+    },
+    {
+      "id": "skeleton_growl",
+      "path": "/assets/audio/enemies/skeleton_growl_01.wav",
+      "category": "enemy",
+      "volume": 0.5,
+      "description": "骷髅咆哮声（后备）"
+    },
+    {
+      "id": "skeleton_death",
+      "path": "/assets/audio/enemies/skeleton_death_02.wav",
+      "category": "enemy",
+      "volume": 0.7,
+      "description": "骷髅死亡声（后备）"
+    },
+    {
+      "id": "background_music",
+      "path": "/assets/audio/bgm.m4a",
+      "category": "bgm",
+      "volume": 0.5,
+      "description": "游戏背景音乐"
+    }
+  ],
+  "settings": {
+    "masterVolume": 0.7,
+    "categoryVolumes": {
+      "player": 0.8,
+      "enemy": 0.6,
+      "environment": 0.4,
+      "ui": 0.5,
+      "bgm": 0.6
+    },
+    "randomization": {
+      "enablePitchVariation": true,
+      "pitchVariationRange": [0.95, 1.05],
+      "enableVolumeVariation": true,
+      "volumeVariationRange": [0.9, 1.1]
+    }
+  }
+}
