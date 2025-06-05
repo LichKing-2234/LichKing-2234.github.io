@@ -39,8 +39,59 @@
         -ms-overflow-style: none;
         scrollbar-width: none;
       }
+      
+      /* 背包系统动画 */
+      @keyframes slideIn {
+        0% {
+          opacity: 0;
+          transform: translateX(100%);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      
+      @keyframes slideOut {
+        0% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+        100% {
+          opacity: 0;
+          transform: translateX(100%);
+        }
+      }
+      
+      /* 背包UI样式增强 */
+      #inventory-container {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(5px);
+      }
+      
+      /* 物品槽位悬停效果 */
+      .inventory-slot:hover {
+        transform: scale(1.05);
+        transition: transform 0.2s ease;
+      }
+      
+      /* 背包网格动画 */
+      #inventory-grid {
+        animation: fadeIn 0.3s ease-out;
+      }
+      
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
     </style>
-    <script type="module" crossorigin src="/assets/index-6b643592.js"></script>
+    <script type="module" crossorigin src="/assets/index-d38b8a5e.js"></script>
   </head>
   <body>
     
